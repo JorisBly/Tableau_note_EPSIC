@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau des note Joris Bailly</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="tableau_note_script.js"></script>
+    <link href="tableau_note_style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="ui hidden divider"></div>
+<h2 class="ui  center aligned header">
+    <i class="dragon icon"></i>
+
+    <h1 class="ui center aligned header huge black text"> Note Joris Bailly</h1>
+
+</h2>
+<div class="ui three column grid">
+    <div class="row">
+        <div class=" seven  column middle aligned content"><p><span class="ui huge black text">Note CFC</span></p></div>
+        <div class=" three column middle aligned content" id="grades_CFC"></div>
+        <div class="column middle aligned content" ><p id=passorfailure ></p></div>
+    </div>
+
+</div>
+<div class="ui four column grid ">
+    <div class="row">
+        <div class="four wide column"><p><span class="ui large black text">Compétences de base élargies</span></p>
+            <select class="ui selection dropdown" id="weight_BE">
+                <option value="10">10%</option>
+            </select>
+        </div>
+        <div class="four wide column"><p><span class="ui large black text">Culture Général</span></p>
+            <select
+                    class="ui selection dropdown" id="weight_ECG">
+                <option value="20">20%</option>
+            </select>
+        </div>
+        <div class="four wide column"><p><span class="ui large black text">Compétences en informatique</span></p>
+            <select
+                    class="ui selection dropdown" id="weight_ICT">
+                <option value="30">30%</option>
+
+            </select>
+        </div>
+        <div class="four wide column">
+            <p><span class="ui large black text">TPI</span><select class="ui selection dropdown" id="weight_TPI">
+                <option value="40">40%</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="ui four column grid">
+    <div class="row">
+        <div class="four wide column middle aligned content"><p id="average_CB"></p></div>
+
+        <div class="four wide column"><p id="average_CG"></p></div>
+
+        <div class="four wide column"><p id="average_ICT"></p></div>
+
+        <div class="four wide column"><select class="ui selection dropdown" id="average_TPI">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.1">1.1</option>
+            <option value="1.2">1.2</option>
+            <option value="1.3">1.3</option>
+            <option value="1.4">1.4</option>
+            <option value="1.5">1.5</option>
+            <option value="1.6">1.6</option>
+            <option value="1.7">1.7</option>
+            <option value="1.8">1.8</option>
+            <option value="1.9">1.9</option>
+            <option value="2">2</option>
+            <option value="2.1">2.1</option>
+            <option value="2.2">2.2</option>
+            <option value="2.3">2.3</option>
+            <option value="2.4">2.4</option>
+            <option value="2.5">2.5</option>
+            <option value="2.6">2.6</option>
+            <option value="2.7">2.7</option>
+            <option value="2.8">2.8</option>
+            <option value="2.9">2.9</option>
+            <option value="3">3</option>
+            <option value="3.1">3.1</option>
+            <option value="3.2">3.2</option>
+            <option value="3.3">3.3</option>
+            <option value="3.4">3.4</option>
+            <option value="3.5">3.5</option>
+            <option value="3.6">3.6</option>
+            <option value="3.7">3.7</option>
+            <option value="3.8">3.8</option>
+            <option value="3.9">3.9</option>
+            <option value="4">4</option>
+            <option value="4.1">4.1</option>
+            <option value="4.2">4.2</option>
+            <option value="4.3">4.3</option>
+            <option value="4.4">4.4</option>
+            <option value="4.5">4.5</option>
+            <option value="4.6">4.6</option>
+            <option value="4.7">4.7</option>
+            <option value="4.8">4.8</option>
+            <option value="4.9">4.9</option>
+            <option value="5">5
+            <option>
+            <option value="5.1">5.1</option>
+            <option value="5.2">5.2</option>
+            <option value="5.3">5.3</option>
+            <option value="5.4">5.4</option>
+            <option value="5.5">5.5</option>
+            <option value="5.6">5.6</option>
+            <option value="5.7">5.7</option>
+            <option value="5.8">5.8</option>
+            <option value="5.9">5.9</option>
+            <option value="6">6</option>
+        </select>
+        </div>
+
+    </div>
+</div>
+<div class="ui hidden divider"></div>
+<div class="ui one column grid ">
+    <div class="row">
+
+        <div class="sixteen wide column"><p><span class="ui inverted segment large black text">Compétences de base élargies</span>
+        </p></div>
+
+        <div class="ui hidden divider"></div>
+        <div class="ui five column grid ">
+
+            <div class="row">
+
+                <div class="two wide column middle aligned content middle aligned content "><p><span
+                        class="ui large black text">Anglais</span></p></div>
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_ENG_1">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+                </select></div>
+
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_ENG_2">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+
+                </select></div>
+
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_ENG_3">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+
+                </select></div>
+
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_ENG_4">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+                </select></div>
+
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_ENG_5">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+                </select></div>
+
+            </div>
+        </div>
+
+        <div class="ui four column grid">
+            <div class="row">
+
+                <div class="two wide column middle aligned content"><p><span class="ui large black text">Math</span></p>
+                </div>
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_MATH_1">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+
+                </select></div>
+
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_MATH_2">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+
+                </select></div>
+
+                <div class="two wide column"><select class="ui selection dropdown" id="grade_MATH_3">
+                    <option value="Note">Note</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+
+
+                </select>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<div class="ui hidden divider"></div>
+<div><p><span class="ui inverted segment large black text">Culture général</span></p></div>
+<div class="ui hidden divider"></div>
+<div class="ui four column grid">
+    <div class="row">
+
+        <div class="two wide column middle aligned content"><p><span class="ui large black text">Société</span></p>
+        </div>
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_1">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+        </select></div>
+
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_2">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+
+        </select></div>
+
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_3">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            (4) [undefined, undefined, undefined, undefined]
+
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+
+        </select>
+        </div>
+
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_4">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+
+        </select>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="ui four column grid">
+    <div class="row">
+
+        <div class="two wide column"><p><span class="ui large black text"></span></p></div>
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_5">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+
+        </select></div>
+
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_6">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+        </select></div>
+
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_7">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+        </select>
+        </div>
+
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_ECG_8">
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+
+        </select>
+        </div>
+    </div>
+</div>
+<div class="ui hidden divider"></div>
+<div class="ten wide column"><p><span class="ui inverted segment center aligned large black text">Compétences en informatique</span>
+</p></div>
+<div class="ui three column grid">
+
+    <div class="ui hidden divider"></div>
+
+    <div class="row">
+
+        <div class="two wide column"><p><span class="ui large black text">Module EPSIC</span></p></div>
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_MOD">
+
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+
+        </select></div>
+        <div class="two wide column middle aligned content"><p><span class="ui large black text">80%</span></p></div>
+    </div>
+</div>
+<div class="ui three column grid">
+    <div class="row">
+
+        <div class="two wide column middle aligned content"><p><span class="ui large black text">Module CIE</span></p>
+        </div>
+        <div class="two wide column"><select class="ui selection dropdown" id="grade_CIE">
+
+            <option value="Note">Note</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+            <option value="5.5">5.5</option>
+            <option value="6">6</option>
+
+
+        </select></div>
+        <div class="two wide column middle aligned content"><p><span class="ui large black text">20%</span></p></div>
+    </div>
+</div>
+
+</body>
+</html>

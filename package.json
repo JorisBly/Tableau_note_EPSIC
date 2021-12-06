@@ -1,0 +1,10 @@
+{
+  "name": "tableau_note_js",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Joris",
+  "license": "ISC",
+  "dependencies": {
+    "fomantic-ui": "^2.8.8"
+  }
+}

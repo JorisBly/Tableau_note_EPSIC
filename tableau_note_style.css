@@ -1,0 +1,28 @@
+html{
+    margin-left: 10px;
+}
+
+#passorfailure{
+    font-size: 50px;
+}
+
+#grades_CFC{
+    font-size: 60px;
+}
+
+#average_CB{
+    font-size: 40px;
+}
+
+
+#average_CG{
+    font-size: 40px;
+}
+
+#average_ICT{
+    font-size: 40px;
+}
+
+#culture-generale{
+    width: 200px;
+}
